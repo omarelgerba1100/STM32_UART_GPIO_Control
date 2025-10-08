@@ -42,11 +42,6 @@ Each message contains two digits, where each digit controls one GPIO pin.
 
 ```
 
-Virtual Terminal TXD → PA10 (MCU RX)
-Virtual Terminal RXD ← PA9  (MCU TX)
-GND (common)
-PA0, PA1 → LEDs (with 330 Ω resistors to VCC for active-LOW configuration)
-
 ```
 
 ---
