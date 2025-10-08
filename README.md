@@ -38,8 +38,6 @@ Each message contains two digits, where each digit controls one GPIO pin.
 | **Simulation Tool** | Proteus 8.14 Professional |
 | **Serial Terminal** | Virtual Terminal / PuTTY / Hercules |
 
-### Wiring for Proteus Simulation
-
 ```
 
 ```
