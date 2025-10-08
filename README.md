@@ -51,53 +51,6 @@ PA0, PA1 → LEDs (with 330 Ω resistors to VCC for active-LOW configuration)
 
 ---
 
-## Project Structure
-
-```
-
-STM32_UART_GPIO_Control_RoverITU
-│   README.md
-│
-├── Proteus
-│   │   Result.png
-│   │   simulation_sch_STM32.pdsprj
-│   │   simulation_sch_STM32.SVG
-│   │
-│   └── Project Backups
-│           simulation_sch_STM32 [20251008, 23-01-00].pdsprj
-│
-└── STM32CubeIDE Project
-│   uart_gpio_toggle.ioc
-│   .project / .cproject / .mxproject
-│   STM32F103C6TX_FLASH.ld
-│
-├── Core
-│   ├── Inc
-│   │       main.h
-│   │       stm32f1xx_hal_conf.h
-│   │       stm32f1xx_it.h
-│   └── Src
-│           main.c
-│           stm32f1xx_it.c
-│           stm32f1xx_hal_msp.c
-│           syscalls.c
-│           sysmem.c
-│           system_stm32f1xx.c
-│
-├── Drivers
-│   ├── CMSIS
-│   └── STM32F1xx_HAL_Driver
-│
-├── Startup
-│       startup_stm32f103c6tx.s
-│
-└── Debug
-(auto-generated build files: .elf, .hex, .map, etc.)
-
-````
-
----
-
 ## How It Works 
 
 1. The MCU continuously waits for two UART characters (`'0'`, `'1'`, `'2'`).
