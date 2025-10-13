@@ -66,8 +66,8 @@ all: main-build
 main-build: uart_gpio_toggle.elf secondary-outputs
 
 # Tool invocations
-uart_gpio_toggle.elf uart_gpio_toggle.map: $(OBJS) $(USER_OBJS) C:\Users\omare\STM32CubeIDE\workspace_1.19.0\uart_gpio_toggle\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "uart_gpio_toggle.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\omare\STM32CubeIDE\workspace_1.19.0\uart_gpio_toggle\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uart_gpio_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+uart_gpio_toggle.elf uart_gpio_toggle.map: $(OBJS) $(USER_OBJS) C:\Users\omare\OneDrive\Documents\GitHub\STM32_UART_GPIO_Control_RoverITU\STM32CubeIDE_Project\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "uart_gpio_toggle.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\omare\OneDrive\Documents\GitHub\STM32_UART_GPIO_Control_RoverITU\STM32CubeIDE_Project\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uart_gpio_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
