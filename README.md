@@ -1,5 +1,5 @@
 ```markdown
-# STM32 UART-GPIO Control Project (Rover-ITU Embedded Systems Assignment)
+# STM32 UART-GPIO Control Project (Embedded Systems Assignment)
 
 ## Overview
 This project demonstrates **UART-based digital output control** on an STM32 microcontroller using the **HAL library** in **STM32CubeIDE**, verified through **Proteus simulation**.
@@ -119,7 +119,7 @@ CMD=21  P1=TOGGLED  P2=HIGH
 
 **Ömer CIRBE**
 Electronics & Communication Engineering Student
-Istanbul Technical University (ITU) – Rover Team
+Istanbul Technical University (ITU)
 [cirbe24@itu.edu.tr](mailto:cirbe24@itu.edu.tr)
 
 
